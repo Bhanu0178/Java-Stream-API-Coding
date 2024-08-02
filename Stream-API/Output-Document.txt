@@ -1,0 +1,126 @@
+==1. FILTER EMPLOYEES BY GENDER HAVING M:==
+Employee Raju [age=23, salary=65000.0, gender=Male]
+Employee Suresh [age=50, salary=36000.0, gender=Male]
+Employee Dinesh [age=33, salary=46000.0, gender=Male]
+Employee Tarun [age=19, salary=56000.0, gender=Male]
+Employee Lokesh [age=28, salary=16000.0, gender=Male]
+Employee Nishanth [age=36, salary=44000.0, gender=Male]
+
+==2. FILTER EMPLOYEES BY AGE OLDER THAN 30 YEARS:==
+Employee Suresh [age=50, salary=36000.0, gender=Male]
+Employee Dinesh [age=33, salary=46000.0, gender=Male]
+Employee Rani [age=67, salary=86000.0, gender=Female]
+Employee Queen [age=42, salary=96000.0, gender=Female]
+Employee Manisha [age=43, salary=76000.0, gender=Female]
+Employee Nishanth [age=36, salary=44000.0, gender=Male]
+
+==3. FILTER EMPLOYEES BY SALARY GREATER THAN $50,000:==
+Employee Raju [age=23, salary=65000.0, gender=Male]
+Employee Rani [age=67, salary=86000.0, gender=Female]
+Employee Queen [age=42, salary=96000.0, gender=Female]
+Employee Tarun [age=19, salary=56000.0, gender=Male]
+Employee Manisha [age=43, salary=76000.0, gender=Female]
+
+==4. CREATE A LIST OF EMPLOYEE NAMES (STRINGS)==
+Raju | Suresh | Dinesh | Anjali | Rani | Queen | Tarun | Lokesh | Manisha | Nishanth | 
+
+==5. CALCULATE THE AVERAGE SALARY OF ALL EMPLOYEES:==
+Average of All Employee's: 54700.0
+==OR==
+Average of All Employee's:54700.0
+
+==6. FIND THE EMPLOYEE WITH THE HIGHEST SALARY.==
+Highest salary Paid To:Employee Queen [age=42, salary=96000.0, gender=Female]
+
+==7. GROUP EMPLOYEES BY GENDER:==
+Female [Employee Anjali [age=23, salary=26000.0, gender=Female], Employee Rani [age=67, salary=86000.0, gender=Female], Employee Queen [age=42, salary=96000.0, gender=Female], Employee Manisha [age=43, salary=76000.0, gender=Female]]
+Male [Employee Raju [age=23, salary=65000.0, gender=Male], Employee Suresh [age=50, salary=36000.0, gender=Male], Employee Dinesh [age=33, salary=46000.0, gender=Male], Employee Tarun [age=19, salary=56000.0, gender=Male], Employee Lokesh [age=28, salary=16000.0, gender=Male], Employee Nishanth [age=36, salary=44000.0, gender=Male]]
+
+==8. COUNT MALE EMPLOYEES:==
+Number of Male Employee's:6
+
+==9. SUM OF ALL SALARIES:==
+Sum of All Salary's:547000.0
+==OR==
+Sum of All Salary's:547000.0
+
+==10. SORT THE EMPLOYEES BY THEIR NAMES IN ALPHABETICAL ORDER.==
+Employee Anjali [age=23, salary=26000.0, gender=Female]
+Employee Dinesh [age=33, salary=46000.0, gender=Male]
+Employee Lokesh [age=28, salary=16000.0, gender=Male]
+Employee Manisha [age=43, salary=76000.0, gender=Female]
+Employee Nishanth [age=36, salary=44000.0, gender=Male]
+Employee Queen [age=42, salary=96000.0, gender=Female]
+Employee Raju [age=23, salary=65000.0, gender=Male]
+Employee Rani [age=67, salary=86000.0, gender=Female]
+Employee Suresh [age=50, salary=36000.0, gender=Male]
+Employee Tarun [age=19, salary=56000.0, gender=Male]
+
+==11. SORT EMPLOYEES BY AGE IN ASCENDING ORDER:==
+Employee Tarun [age=19, salary=56000.0, gender=Male]
+Employee Raju [age=23, salary=65000.0, gender=Male]
+Employee Anjali [age=23, salary=26000.0, gender=Female]
+Employee Lokesh [age=28, salary=16000.0, gender=Male]
+Employee Dinesh [age=33, salary=46000.0, gender=Male]
+Employee Nishanth [age=36, salary=44000.0, gender=Male]
+Employee Queen [age=42, salary=96000.0, gender=Female]
+Employee Manisha [age=43, salary=76000.0, gender=Female]
+Employee Suresh [age=50, salary=36000.0, gender=Male]
+Employee Rani [age=67, salary=86000.0, gender=Female]
+
+==12. SORT EMPLOYEES BY AGE IN DESCENDING ORDER:==
+Employee Rani [age=67, salary=86000.0, gender=Female]
+Employee Suresh [age=50, salary=36000.0, gender=Male]
+Employee Manisha [age=43, salary=76000.0, gender=Female]
+Employee Queen [age=42, salary=96000.0, gender=Female]
+Employee Nishanth [age=36, salary=44000.0, gender=Male]
+Employee Dinesh [age=33, salary=46000.0, gender=Male]
+Employee Lokesh [age=28, salary=16000.0, gender=Male]
+Employee Raju [age=23, salary=65000.0, gender=Male]
+Employee Anjali [age=23, salary=26000.0, gender=Female]
+Employee Tarun [age=19, salary=56000.0, gender=Male]
+
+==12. SORT EMPLOYEES BY SALARY:==
+Employee Lokesh [age=28, salary=16000.0, gender=Male]
+Employee Anjali [age=23, salary=26000.0, gender=Female]
+Employee Suresh [age=50, salary=36000.0, gender=Male]
+Employee Nishanth [age=36, salary=44000.0, gender=Male]
+Employee Dinesh [age=33, salary=46000.0, gender=Male]
+Employee Tarun [age=19, salary=56000.0, gender=Male]
+Employee Raju [age=23, salary=65000.0, gender=Male]
+Employee Manisha [age=43, salary=76000.0, gender=Female]
+Employee Rani [age=67, salary=86000.0, gender=Female]
+Employee Queen [age=42, salary=96000.0, gender=Female]
+
+==13. FIND OLDEST EMPLOYEE:==
+Oldest Employee: Employee Rani [age=67, salary=86000.0, gender=Female]
+
+==14. GROUP EMPLOYEES INTO AGE GROUPS (E.G., 20-30, 31-40, ETC.)==
+20-30 [Employee Raju [age=23, salary=65000.0, gender=Male], Employee Anjali [age=23, salary=26000.0, gender=Female], Employee Lokesh [age=28, salary=16000.0, gender=Male]]
+31-40 [Employee Dinesh [age=33, salary=46000.0, gender=Male], Employee Nishanth [age=36, salary=44000.0, gender=Male]]
+40+ [Employee Suresh [age=50, salary=36000.0, gender=Male], Employee Rani [age=67, salary=86000.0, gender=Female], Employee Queen [age=42, salary=96000.0, gender=Female], Employee Tarun [age=19, salary=56000.0, gender=Male], Employee Manisha [age=43, salary=76000.0, gender=Female]]
+
+==15.FIND ALL EMPLOYEES WHO ARE EXACTLY 35 YEARS OLD.==
+Employee Rani [age=67, salary=86000.0, gender=Female]
+
+==16. CALCULATE THE SUM OF SALARIES BY GENDER:==
+Female 284000.0
+Male 263000.0
+
+==17. FIND EMPLOYEES WITH NAMES STARTING WITH "J":==
+Employee Raju [age=23, salary=65000.0, gender=Male]
+Employee Rani [age=67, salary=86000.0, gender=Female]
+
+==18. CALCULATE THE AVERAGE SALARY FOR MALE AND FEMALE EMPLOYEES:==
+Female 71000.0
+Male 43833.333333333336
+
+==19. FIND THE TOP N HIGHEST PAID EMPLOYEES:==
+Employee Queen [age=42, salary=96000.0, gender=Female]
+Employee Rani [age=67, salary=86000.0, gender=Female]
+Employee Manisha [age=43, salary=76000.0, gender=Female]
+Employee Raju [age=23, salary=65000.0, gender=Male]
+Employee Tarun [age=19, salary=56000.0, gender=Male]
+
+==20. GET A LIST OF DISTINCT AGES OF ALL EMPLOYEES.==
+23 | 50 | 33 | 67 | 42 | 19 | 28 | 43 | 36 | 
