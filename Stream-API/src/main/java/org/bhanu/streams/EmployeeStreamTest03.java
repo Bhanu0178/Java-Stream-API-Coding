@@ -101,5 +101,6 @@ public class EmployeeStreamTest03
 	//20. Get a list of distinct ages of all employees.
 		System.out.println("\n==20. Get a list of distinct ages of all employees.==".toUpperCase());
 		list.stream().map(Employee::getAge).distinct().forEach((emp1)->System.out.print(emp1 + " | "));
+	
 	}
 }
