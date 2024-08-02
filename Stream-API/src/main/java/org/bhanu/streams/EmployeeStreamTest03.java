@@ -101,6 +101,12 @@ public class EmployeeStreamTest03
 	//20. Get a list of distinct ages of all employees.
 		System.out.println("\n==20. Get a list of distinct ages of all employees.==".toUpperCase());
 		list.stream().map(Employee::getAge).distinct().forEach((emp1)->System.out.print(emp1 + " | "));
-	
+		System.out.println();
+	//21. Find the Three Lowest-Paid Employees:
+		System.out.println("\n==21. Find the Three Lowest-Paid Employees:==".toUpperCase());
+		list.stream().sorted(Comparator.comparingDouble(Employee::getSalary)).limit(3).forEach(System.out::println);
+	//22. Sort Employees by Name Length:
+		System.out.println("\n==22. Sort Employees by Name Length:==".toUpperCase());
+		list.stream().sorted(Comparator.comparing((emp1)-> emp1.getName().length())).forEach(System.out::println);
 	}
 }
