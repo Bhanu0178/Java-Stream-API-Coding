@@ -141,3 +141,37 @@ Employee Anjali [age=23, salary=26000.0, gender=Female]
 Employee Lokesh [age=28, salary=16000.0, gender=Male]
 Employee Manisha [age=43, salary=76000.0, gender=Female]
 Employee Nishanth [age=36, salary=44000.0, gender=Male]
+
+==23. GROUP EMPLOYEES BY AGE RANGE:RANGES (E.G., 20-29, 30-39, ETC.)==
+20-29 [Employee Raju [age=23, salary=65000.0, gender=Male], Employee Anjali [age=23, salary=26000.0, gender=Female], Employee Lokesh [age=28, salary=16000.0, gender=Male]]
+30-39 [Employee Dinesh [age=33, salary=46000.0, gender=Male], Employee Nishanth [age=36, salary=44000.0, gender=Male]]
+40+ [Employee Suresh [age=50, salary=36000.0, gender=Male], Employee Rani [age=67, salary=86000.0, gender=Female], Employee Queen [age=42, salary=96000.0, gender=Female], Employee Tarun [age=19, salary=56000.0, gender=Male], Employee Manisha [age=43, salary=76000.0, gender=Female]]
+
+==24. FIND THE AVERAGE SALARY OF EMPLOYEES AGED 30 OR YOUNGER:==
+Avg Salary of Employee's Aged below 30:40750.0
+
+==25. FIND THE NAMES OF MALE EMPLOYEES WITH SALARIES OVER $60,000:==
+Raju | Tarun | 
+==26. FIND THE YOUNGEST FEMALE EMPLOYEE==
+Employee Anjali [age=23, salary=26000.0, gender=Female]
+
+==27. RETRIEVE THE NAMES OF EMPLOYEES IN REVERSE ORDER(DESCENDING):==
+Tarun | Suresh | Rani | Raju | Queen | Nishanth | Manisha | Lokesh | Dinesh | Anjali | 
+==28. FIND THE HIGHEST SALARY AMONG FEMALE EMPLOYEES:==
+Female with Max Salary:Employee Queen [age=42, salary=96000.0, gender=Female]
+==OR==
+Female with Max Salary:Employee Queen [age=42, salary=96000.0, gender=Female]
+
+==29. GROUP EMPLOYEES BY AGE AND GENDER:==
+33 {Male=[Employee Dinesh [age=33, salary=46000.0, gender=Male]]}
+50 {Male=[Employee Suresh [age=50, salary=36000.0, gender=Male]]}
+19 {Male=[Employee Tarun [age=19, salary=56000.0, gender=Male]]}
+67 {Female=[Employee Rani [age=67, salary=86000.0, gender=Female]]}
+36 {Male=[Employee Nishanth [age=36, salary=44000.0, gender=Male]]}
+23 {Female=[Employee Anjali [age=23, salary=26000.0, gender=Female]], Male=[Employee Raju [age=23, salary=65000.0, gender=Male]]}
+42 {Female=[Employee Queen [age=42, salary=96000.0, gender=Female]]}
+43 {Female=[Employee Manisha [age=43, salary=76000.0, gender=Female]]}
+28 {Male=[Employee Lokesh [age=28, salary=16000.0, gender=Male]]}
+
+==30. FIND THE SUM OF SALARIES FOR EMPLOYEES WITH NAMES CONTAINING "SURESH":==
+Sum of Salaries for Employees with Names Containing:36000.0
