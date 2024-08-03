@@ -108,5 +108,40 @@ public class EmployeeStreamTest03
 	//22. Sort Employees by Name Length:
 		System.out.println("\n==22. Sort Employees by Name Length:==".toUpperCase());
 		list.stream().sorted(Comparator.comparing((emp1)-> emp1.getName().length())).forEach(System.out::println);
+//	23. Group Employees by Age Range:ranges (e.g., 20-29, 30-39, etc.)
+		System.out.println("\n==23. Group Employees by Age Range:ranges (e.g., 20-29, 30-39, etc.)==".toUpperCase());
+		list.stream().collect(Collectors.groupingBy((emp1)-> {
+			int age = emp1.getAge();
+			if(age>=20 && age<=29) return "20-29";
+			else if(age>=30 && age<=39) return "30-39";
+			else return "40+";
+		})).forEach((k,v)->System.out.println(k + " " + v));
+//	24. Find the Average Salary of Employees Aged 30 or Younger:
+		System.out.println("\n==24. Find the Average Salary of Employees Aged 30 or Younger:==".toUpperCase());
+		double avgSal = list.stream().filter(emp1->emp1.getAge()<=30).mapToDouble(Employee::getSalary).average().orElseThrow();
+		System.out.println("Avg Salary of Employee's Aged below 30:" + avgSal);
+//	25. Find the Names of Male Employees with Salaries Over $50,000:
+		System.out.println("\n==25. Find the Names of Male Employees with Salaries Over $60,000:==".toUpperCase());
+		list.stream().filter(emp1->emp1.getGender().startsWith("M") && emp1.getSalary()>=50000).map(Employee::getName).forEach(name->System.out.print(name + " | "));
+//	26. Find the Youngest Female Employee
+		System.out.println("\n==26. Find the Youngest Female Employee==".toUpperCase());
+		list.stream().filter(emp1->emp1.getGender().startsWith("F")).sorted(Comparator.comparingInt(Employee::getAge)).limit(1).forEach(System.out::println);
+//	27. Retrieve the Names of Employees in Reverse Order:
+		System.out.println("\n==27. Retrieve the Names of Employees in Reverse Order(descending):==".toUpperCase());
+		list.stream().sorted(Comparator.comparing(Employee::getName).reversed()).map(Employee::getName).forEach(name->System.out.print(name + " | "));
+//	28. Find the Highest Salary Among Female Employees:
+		System.out.println("\n==28. Find the Highest Salary Among Female Employees:==".toUpperCase());
+		Employee femaleMaxSal = list.stream().filter(emp1->emp1.getGender().startsWith("F")).max(Comparator.comparingDouble(Employee::getSalary)).orElseThrow();
+		System.out.println("Female with Max Salary:" + femaleMaxSal);
+		System.out.println("==OR==");
+		Employee femaleMaxSal1 = list.stream().filter(emp1->emp1.getGender().equalsIgnoreCase("Female")).collect(Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary))).orElseThrow();
+		System.out.println("Female with Max Salary:" + femaleMaxSal1);
+//	29. Group Employees by Age and Gender:
+		System.out.println("\n==29. Group Employees by Age and Gender:==".toUpperCase());
+		list.stream().collect(Collectors.groupingBy(Employee::getAge, Collectors.groupingBy(Employee::getGender))).forEach((k,v)->System.out.println(k + " " + v));
+//	30. Find the Sum of Salaries for Employees with Names Containing "Suresh":
+		System.out.println("\n==30. Find the Sum of Salaries for Employees with Names Containing \"Suresh\":==".toUpperCase());
+		double sumOfSal = list.stream().filter(emp1->emp1.getName().equalsIgnoreCase("Suresh")).mapToDouble(Employee::getSalary).sum();
+		System.out.println("Sum of Salaries for Employees with Names Containing:" + sumOfSal);
 	}
 }
